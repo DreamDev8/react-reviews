@@ -1,0 +1,139 @@
+/***************** VARIABLES ******************/
+
+:root {
+    --clr-blue: hsl(205, 63%, 48%);
+    --clr-blue-light: hsl(205, 90%, 88%);
+    --clr-darker-grey: hsl(210, 22%, 49%);
+    --clr-lighter-grey: hsl(210, 36%, 96%);
+    --clr-white: #fff;
+    --clr-black: #222;
+}
+
+/***************** GLOBALS ******************/
+
+html {
+    font-size: 100%;
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: "Open Sans", sans-serif;
+    background-color: var(--clr-lighter-grey);
+    line-height: 1.5;
+    letter-spacing: 0.03125rem;
+    font-size: 0.875rem;
+}
+
+h1 {
+    font-size: 2.5rem;
+    display: inline-block;
+    margin-bottom: 5rem;
+}
+
+.heading {
+    text-align: center;
+}
+
+.border-bottom {
+    border: 0.125rem solid var(--clr-blue);
+    width: 6.25rem;
+    margin: -4.6875rem auto 4.375rem auto;
+}
+
+/***************** REVIEWS ******************/
+
+main {
+    min-height: 98vh;
+    display: grid;
+    place-items: center;
+    width: 90vw;
+    margin: 0 auto;
+    max-width: 38.75rem;
+}
+
+section {
+    margin: 5rem auto;
+}
+
+.article-container {
+    border: 0.0625rem solid transparent;
+    border-radius: 0.25rem;
+    text-align: center;
+    background-color: var(--clr-white);
+    box-shadow: 0 0.3125rem 0.9375rem rgba(0, 0, 0, 0.2);
+}
+
+.image-container {
+    margin: 0 auto;
+    width: 9.375rem;
+    height: 9.375rem;
+}
+
+.image {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    margin-top: 1.5625rem;
+    box-shadow: 0.25rem -0.5625rem var(--clr-blue);
+}
+
+.name {
+    padding-top: 3.125rem;
+    text-transform: capitalize;
+    font-size: 1.125rem;
+}
+
+.job {
+    color: var(--clr-blue);
+    text-transform: uppercase;
+    font-size: 0.9375rem;
+}
+
+.review {
+    color: var(--clr-darker-grey);
+    padding: 0.8125rem 1.5625rem 0 1.5625rem;
+    font-size: 0.9375rem;
+}
+
+.cta {
+    display: block;
+    margin: 1.5625rem auto;
+    background-color: var(--clr-blue-light);
+    color: var(--clr-blue);
+    font-size: 0.9375rem;
+    font-weight: 600;
+    border: transparent;
+    width: 6.25rem;
+    height: 1.5625rem;
+    cursor: pointer;
+}
+
+.btn-previous,
+.btn-next {
+    color: var(--clr-blue);
+    margin: 1.5625rem 0.5rem 0 0.5rem;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+footer {
+    position: sticky;
+    left: 0;
+    right: 0;
+    text-align: center;
+}
+
+.footer-h3 {
+    font-size: 0.5625rem;
+    color: var(--clr-darker-grey);
+}
